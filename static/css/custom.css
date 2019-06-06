@@ -1,0 +1,27 @@
+body{
+	font-family: 'Times';
+	font-size: 18px!important;
+}
+.section-follow .fa-3x{
+	margin:5px 13px;
+}
+.section-personal{
+	margin-top: 0px!important;
+	padding-top: 0px!important;
+}
+.section-projects{
+	background-image: url(../img/wall10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: absolute;
+}
+
+.section-experience{
+	background-image: url(../img/wall9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: relative;
+}
+#education,#experience,#resp{
+	min-height: 600px!important;
+}
