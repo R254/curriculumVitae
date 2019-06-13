@@ -1,14 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-	<section id="personal" class="section  section-personal scrollspy">
+	<section id="cv" class="section  section-personal scrollspy">
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image">
-						<img src="{{ url_for('static', filename='img/default.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title"><h4>Kipngetich Ruto</h4></span>
+						<img src="{{ url_for('static', filename='img/default.jpg') }}" class=" responsive-img">
+						<!--span class="card-title"><h4>Kipngetich Ruto</h4></span-->
 					</div>
 					<div class="card-content">
 						I am information technology enthusiast with a great interest in software development
@@ -35,6 +35,27 @@
 					<li class="collection-item">Nairobi.</li>
 
 				</ul>
+				<div class="card-panel">
+					<h5>Please drop a message using this form</h5>
+					<div class="input-field">
+						<i class="material-icons prefix">account_circle</i>
+						<input type="text" name="name" placeholder="Name">
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<input type="text" name="email" placeholder="Email">
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix">phone</i>
+						<input type="text" name="phone" placeholder="Phone">
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix">mode_edit</i>
+						<textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+					</div>
+					<input type="submit" value="Submit" class="btn">
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -43,12 +64,12 @@
 <section id="projects" class="section section-projects scrollspy">
 	<div class="container">
 		<div class="row">
-			<h3 class="center"><span class="teal-text text-lighten-3">Projects</span> And Portfolio</h3>
-			<div class="col s12 m4">
+			<h3 class="center">Projects <span class="teal-text text-lighten-3">And Portfolio</span></h3>
+			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image">
 						<img src="{{ url_for('static', filename='img/wall10.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title">R254Developers</span>
+						<span class="card-title teal-text">R254Developers ~ <i>Coming soon... Watch this space</i></span>
 					</div>
 					<div class="card-content">
 						This is the site that contains various links to resourceful materials for software engineers and technological ethusiasts. It also span the area of data analysis and data science.
@@ -56,39 +77,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m4">
-				<div class="card">
-					<div class="card-image">
-						<img src="{{ url_for('static', filename='img/project_background.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title">Travel Tours Agency</span>
-					</div>
-					<div class="card-content">
-						It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-						It has survived not only five
-						<a href="https://r254.github.io/traveltours" target="_blank">Read  More...</a> 
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4">
+			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image">
 						<img src="{{ url_for('static', filename='img/wall3.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title">Android Development</span>
+						<span class="card-title">Online Pdf invoice Generator ~ <i>Coming soon... Watch this space</i></span>
 					</div>
 					<div class="card-content">
-						It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-						It has survived not only five 
+						This is an online generator project which is mean to assist start-ups running online bussiness. It is done using PHP programming. 
 						<a href="" target="_blank">Read  More...</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m4">
+			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image">
-						<img src="{{ url_for('static', filename='img/wall10.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title">R254Developers</span>
+						<img src="{{ url_for('static', filename='img/project_background.jpg') }}" class="materialboxed responsive-img">
+						<span class="card-title">Android Development ~ <i>Coming soon... Watch this space</i></span>
 					</div>
 					<div class="card-content">
 						It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -97,24 +104,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m4">
+			<div class="col s12 m6">
 				<div class="card">
 					<div class="card-image">
-						<img src="{{ url_for('static', filename='img/project_background.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title">Travel Tours Agency</span>
-					</div>
-					<div class="card-content">
-						It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-						It has survived not only five
-						<a href="" target="_blank">Read  More...</a> 
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4">
-				<div class="card">
-					<div class="card-image">
-						<img src="{{ url_for('static', filename='img/wall3.jpg') }}" class="materialboxed responsive-img">
-						<span class="card-title">Android Development</span>
+						<img src="{{ url_for('static', filename='img/work1.jpg') }}" class="materialboxed responsive-img">
+						<span class="card-title">iOS Development ~ <i>Coming soon... Watch this space</i></span>
 					</div>
 					<div class="card-content">
 						It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -181,48 +175,100 @@
 <section id="experience" class="section section-experience scrollspy center">
 	<div class="container">
 		<h3 class="white-text">Work Experience</h3>
+		<!--div class="row">
+			<div class="col s12 m6">
+				<img src="{{ url_for('static', filename='img/work1.jpg') }}" class="materialboxed responsive-img round">
+			</div>
+			<div class="col s12 m6 teal-text white">
+				<h4>Freelance Web Developer</h4>
+				<p class="left-align">
+					I am information technology enthusiast with a great interest in software development
+					using Python, PHP, JavaScript, Html5, and Css3. I am also taking self-study tutorials
+					on Java and REST. I am looking for an opportunity to showcase my expertise as I
+					work with the highest levels of honesty, quality, and integrity.
+				</p>
+			</div>
+		</div-->
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card work-exp">
+					<div class="card-title"><h5 class="border-bottom padding-bottom"><span class="teal-text">May, 2018 to Present :</span><br> Tusker Mattresses Limited</h5></div>
+					<div class="card-content">
+						<span class="card-title">Cashier</span>
+						<b ><h5 class="duties">Duties and responsibilities</h5></b>
+						<ol class="left-align">
+							<li>Receive payment by cash, check, credit cards, vouchers, credit notes, Mpesa.</li>
+							<li>Issue receipts and change due to customers.</li>
+							<li>Count money in cash drawers at the beginning of shifts to ensure that amounts are correct and there is adequate change.</li>
+							<li>Maintain clean and orderly checkout areas.</li>
+							<li>Cash checks for customers.</li>
+							<li>Sort, count and wrap currency and coins.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card work-exp">
+					<div class="card-title"><h5 class="border-bottom padding-bottom"><span class="teal-text">December, 2017 to April, 2018 :</span><br> Tusker Mattresses Limited</h5></div>
+					<div class="card-content">
+						<span class="card-title">Sales Assistant</span>
+						<b ><h5 class="duties">Duties and responsibilities</h5></b>
+						<ol class="left-align">
+							<li>Stocktaking.</li>
+							<li>Checking for stoke-out and placing Local Purchase Order.</li>
+							<li>Analyzing how products are moving so as to help the company put in strategies on how to maximize profits while meeting the set targets.</li>
+							<li>Giving customers guidance about the use of the products.</li>
+							<li>Arranging products in shelves.</li>
+							<li>Maintaining cleanliness and good display of products.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card work-exp">
+					<div class="card-title"><h5><span class="teal-text">May, 2016 to July, 2016 :</span><br> Ministry of Labour and East African Community Affairs</h5></div>
+					<div class="card-content">
+						<div class="card-content">
+						<span class="card-title">Intern Computer User Specialist</span>
+						<b ><h5 class="duties">Duties and responsibilities</h5></b>
+						<ol class="left-align">
+							<li>Installation of software on user computers such as operating systems, microsoft office tools.</li>
+							<li>Troubleshooting of user computers and servers.</li>
+							<li>Replacement of hardware peripheries such as rams and hard disks.</li>
+							<li>Training staff on the use of some IT equipment and software.</li>
+						</ol>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!--div class="col s12 m6">
+				<div class="card-panel">
+					
+				</div>
+			</div-->
+		</div>
 	</div>
 </section>
 
 <section id="resp" class="section  scrollspy center">
 	<div class="container">
 		<h3>Responsibilities & Activities</h3>
-	</div>
-</section>
-
-<section id="social" class="section section-follow teal lighten-2 white-text center scrollspy">
-	<div class="container">
 		<div class="row">
-			<div class="col s12">
-				<h3>Follow Me</h3>
-				<p>Follow me on social media for hobies and interests</p>
-				<a href="#" class="white-text">
-					<i class="fab fa-facebook fa-3x"></i>
-				</a>
-				<a href="#" class="white-text">
-					<i class="fab fa-twitter fa-3x"></i>
-				</a>
-				<a href="#" class="white-text">
-					<i class="fab fa-linkedin fa-3x"></i>
-				</a>
-				<a href="#" class="white-text">
-					<i class="fab fa-instagram fa-3x"></i>
-				</a>
-				<a href="#" class="white-text">
-					<i class="fab fa-pinterest fa-3x"></i>
-				</a>
+			<div class="col s12 m6">
+				<img src="{{ url_for('static', filename='img/wall3.jpg') }}" class="responsive-img">
+			</div>
+			<div class="col s12 m6">
+				<br><br><br>
+				<h4>
+					Run for the Bibleless 2016
+				</h4>
+				<h5>
+					Along Lang'ata Road
+				</h5>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-<footer class="page-footer teal lighten-2">
-          <div class="footer-copyright teal darken-1">
-            <div class="container">
-            <span>&copy; 2019 R254 Developers</span>
-            <a class="grey-text text-lighten-4 right" href="#!">Designed By <i class="red-text text-lighten-4">Kipngetich Ruto</i></a>
-            </div>
-          </div>
-        </footer>
 {% endblock %}
