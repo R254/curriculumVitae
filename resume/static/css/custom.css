@@ -22,8 +22,15 @@ body{
 	background-repeat: no-repeat;
 	background-position: relative;
 }
-#education,#experience,#resp{
-	min-height: 800px!important;
+.section-contact{
+	background-image: url(../img/work3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: relative;
+	padding: 10px;
+}
+#education,#experience,#resp,#contact{
+	min-height: 500px!important;
 }
 .work-exp{
 	padding-top: 10px;
