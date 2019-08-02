@@ -11,7 +11,7 @@ def home():
 def about():
 	return render_template('about.html', title="About")
 
-'''@app.route('/contact', methods = ['GET', 'POST'])
+@app.route('/contact', methods = ['GET', 'POST'])
 def contact():
 	form = ContactForm()
 	if request.method == 'POST':
@@ -27,4 +27,4 @@ def contact():
 			mail.send(msg)
 			return render_template('contact.htm', success=True)
 	elif request.method == 'GET':
-		return render_template('contact.htm', form=form)'''
+		return render_template('contact.htm', form=form)
