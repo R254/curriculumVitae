@@ -9,4 +9,4 @@ MarkupSafe==1.1.1
 pipenv==2018.11.26
 virtualenv==16.4.3
 virtualenv-clone==0.5.1
-Werkzeug==0.15.1
+Werkzeug==0.15.3
